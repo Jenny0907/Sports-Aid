@@ -78,12 +78,9 @@
 
 	.flex {
 		display: flex;
+		flex-flow: wrap;
 		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
-	.flex.flex-4 .box {
-		width: 21%;
+		justify-content: space-around;
 	}
 
 /* Box */
@@ -92,15 +89,21 @@
 		border: solid 1px #dbdbdb;
 		margin-bottom: 2em;
 		padding: 1.5em;
+		max-width: 30%;
 	}
 
 
 	.box.person h3 {
 		margin: 0;
+		font-size: 2.5vw;
+	}
+
+	.box.person p {
+		font-size: 1.5vw;
 	}
 
 	.box.person .image img {
-		max-width: 100%;
+		max-width: 33%;
 	}
 
 /* Image */
